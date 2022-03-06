@@ -5,25 +5,248 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon-01.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <title>Judyta Baca - Porfolio</title>
-  </head>
+
+    <style>
+      /* GLOBAL */
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+      }
+
+      /* NAV BAR */
+
+      .header-container {
+        width: 94%;
+        margin: 0 auto;
+      }
+
+      .header-bar {
+        display: flex;
+        height: 110px;
+
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+      }
+
+      .nav-menu__button {
+        float: left;
+      }
+
+      .nav-menu__button a {
+        display: block;
+        color: #333;
+        text-align: right;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.3em;
+      }
+
+      .nav-menu__button a:hover {
+        font-weight: bold;
+      }
+
+      /* HEADERS */
+      h1 {
+        font-size: 2em;
+        font-family: "Oswald";
+        color: #38ada9;
+      }
+
+      h2 {
+        font-size: 1.7em;
+        font-family: "Oswald";
+        color: #0a3d62;
+        text-transform: uppercase;
+        padding: 1em 2em;
+      }
+
+      h3 {
+        font-size: 1.4em;
+        font-family: "Oswald";
+        color: #0a3d62;
+        text-transform: uppercase;
+        padding: 1em 2em;
+      }
+
+      /* BUTTONS */
+      button {
+        background-color: #0a3d62;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        border-radius: 15px;
+      }
+
+      button a,
+      button a:visited {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* MAIN */
+
+      .main-wrapper {
+        text-align: center;
+        width: 94%;
+        margin: 0 auto;
+      }
+
+      .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+      }
+
+      .hero-section__header {
+        text-align: center;
+        width: 100%;
+        font-size: 35px;
+        padding: 1em;
+      }
+
+      .hero-section__header .scored {
+        text-decoration: line-through;
+        font-size: 1em;
+        font-family: "Oswald";
+        color: #333;
+      }
+
+      .hero-section__text p {
+        text-align: left;
+        padding: 1em;
+      }
+
+      .hero-section__text p:first-of-type {
+        margin-top: 2em;
+      }
+
+      .work-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .work-card {
+        display: flex;
+        width: 90%;
+        margin-bottom: 2em;
+      }
+
+      .work-card__text {
+        width: 50%;
+        padding: 0 1.5em;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .work-card__text h3 {
+        padding: 0 1em;
+      }
+
+      .work-card__text p {
+        margin: 1.5em 0;
+      }
+
+      .work-card__image {
+        width: 50%;
+      }
+
+      .work-card__image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      /* FOOTER */
+
+      .footer-wrapper {
+        width: 94%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .connect-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+      }
+
+      .links-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        margin-top: 2em;
+      }
+
+      .links-section__icons {
+        display: contents flex;
+        height: 80px;
+      }
+
+      .links-section__icons a {
+        padding: 1em;
+      }
+    </style></head
+  >.
   <body>
-    <header>
-      <div>
+    <header class="header-container">
+      <div class="header-bar">
         <img src="assets/img/logo.png" alt="Judyta Baca" />
         <nav>
-          <a href="index.html">Work</a>
-          <a href="about.html">About Me</a>
-          <a href="#contact">Contact</a>
+          <ul class="nav-menu">
+            <li class="nav-menu__button active">
+              <a href="index.html">Work</a>
+            </li>
+            <li class="nav-menu__button">
+              <a href="about.html">About Me</a>
+            </li>
+            <li class="nav-menu__button">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <section>
-        <div>
+    <main class="main-wrapper">
+      <section class="hero-section">
+        <div class="hero-section__header">
           <h1>
-            True value lies in bringing the right experience to the users people
+            True value lies in bringing <br />
+            the right experience <br />
+            to the <span class="scored">users</span> people
           </h1>
+        </div>
+        <div class="hero-section__text">
           <p>
             I am a UX/UI Designer with background in tourism & hospitality
             management where I developed a strong sense of empathy for others,
@@ -41,16 +264,16 @@
         </div>
       </section>
       <section>
-        <div>
+        <div class="work-section">
           <h2>My Work</h2>
-          <div>
-            <div>
+          <div class="work-card">
+            <div class="work-card__image">
               <img
                 src="assets/img/port_pluto.png"
                 alt="Protfolio Case: PlutoPay"
               />
             </div>
-            <div>
+            <div class="work-card__text">
               <h3>PlutoPay</h3>
               <p>
                 The Pluto Pay app is a responsive web app that will offer quick
@@ -58,43 +281,46 @@
                 shopping. It provides ability to pay, send and set budgets while
                 on the go.
               </p>
-              <a href="#">Learn more about PlutoPay</a>
+              <button>
+                <a href="#">Learn more about PlutoPay</a>
+              </button>
             </div>
           </div>
-          <div>
-            <div>
+          <div class="work-card">
+            <div class="work-card__image">
               <img
                 src="assets/img/port_omni.png"
                 alt="Protfolio Case: Omnifood"
               />
             </div>
-            <div>
+            <div class="work-card__text">
               <h3>Omnifood</h3>
               <p>
                 Omnifood is a new premium food delivery service for busy people
                 that offers subscription plans to ready meals delivered straight
                 to your door in under 20 minutes.
               </p>
-              <a href="#">Learn more about Omnifood</a>
+              <button>
+                <a href="#">Learn more about Omnifood</a>
+              </button>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer id="contact">
-      <div>
+    <footer id="contact" class="footer-wrapper">
+      <div class="connect-section">
         <h2>LET'S CONNECT</h2>
         <p>
           Get in touch for job opportunities, collaborative ideas or just to say
           hi! 👋. You can get in touch on my phone
           <a href="tel:1234567890">1234567890</a> ond on my email:
-          <a href="mailto:bacajudyta@gmail.com">bacajudyta@gmail.com</a> or fill
-          and submit the form below.
+          <a href="mailto:bacajudyta@gmail.com">bacajudyta@gmail.com</a>.
         </p>
       </div>
 
-      <div>
-        <div>
+      <div class="links-section">
+        <div class="links-section__icons">
           <a href="#">
             <img src="assets/img/social/ico-email.png" alt="Email" />
           </a>

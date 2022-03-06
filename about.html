@@ -6,123 +6,313 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon-01.png" />
     <title>Judyta Baca - About Me</title>
+
+    <style>
+      /* GLOBAL */
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+      }
+
+      /* NAV BAR */
+
+      .header-container {
+        width: 94%;
+        margin: 0 auto;
+      }
+
+      .header-bar {
+        display: flex;
+        height: 110px;
+
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+      }
+
+      .nav-menu__button {
+        float: left;
+      }
+
+      .nav-menu__button a {
+        display: block;
+        color: #333;
+        text-align: right;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.3em;
+      }
+
+      .nav-menu__button a:hover {
+        font-weight: bold;
+      }
+
+      /* HEADERS */
+      h1 {
+        font-size: 2em;
+        font-family: "Oswald";
+        color: #38ada9;
+      }
+
+      h2 {
+        font-size: 1.7em;
+        font-family: "Oswald";
+        color: #0a3d62;
+        text-transform: uppercase;
+        padding: 1em 2em;
+      }
+
+      h3 {
+        font-size: 1.4em;
+        font-family: "Oswald";
+        color: #0a3d62;
+        text-transform: uppercase;
+        padding: 1em 2em;
+      }
+
+      /* BUTTONS */
+      button {
+        background-color: #0a3d62;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        border-radius: 15px;
+      }
+
+      button a,
+      button a:visited {
+        color: white;
+        text-decoration: none;
+      }
+
+      .tag {
+        margin: 0 2px;
+        margin-bottom: 10px;
+        padding: 4px 10px;
+        color: white;
+        background: #38ADA9;
+        font-size: 1em;
+        border-radius: 25px;
+        overflow-wrap: normal;
+        display: inline-block;
+      }
+
+      /* MAIN */
+
+      .main-wrapper {
+        text-align: center;
+        width: 94%;
+        margin: 0 auto;
+      }
+
+      .about-section__wrapper {
+        display: flex;
+      }
+
+      .about-mainbar p {
+        text-align: left;
+        margin-top: 1em;
+      }
+
+      .skills-tools {
+        display: flex;
+        width: 100%;
+      }
+
+      .skills-section, .tools-section {
+        width: 50%;
+      }
+
+      .tools-list, .skills-list {
+        text-align: left;
+        padding: 2em;
+      }
+
+    
+
+      /* FOOTER */
+
+      .footer-wrapper {
+        width: 94%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .connect-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+      }
+
+      .links-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        margin-top: 2em;
+      }
+
+      .links-section__icons {
+        display: contents flex;
+        height: 80px;
+      }
+
+      .links-section__icons a {
+        padding: 1em;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div>
+    <header class="header-container">
+      <div class="header-bar">
         <img src="assets/img/logo.png" alt="Judyta Baca" />
         <nav>
-          <a href="index.html">Work</a>
-          <a href="about.html">About Me</a>
-          <a href="#contact">Contact</a>
+          <ul class="nav-menu">
+            <li class="nav-menu__button active">
+              <a href="index.html">Work</a>
+            </li>
+            <li class="nav-menu__button">
+              <a href="about.html">About Me</a>
+            </li>
+            <li class="nav-menu__button">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
-    <main>
+    <main class="main-wrapper">
       <section>
-        <div>
-          <img src="assets/img/profile_pic.svg" alt="Proofile picture" />
-          <h1>Hello! I'm Judyta Baca</h1>
-          <p>
-            But my friends & family call me Judy. I'm a UX/UI designer with a
-            keen eye and interest in front-end development, hoping to further my
-            career in the design space. My main interest is creating better
-            experiences for people and reaching for excellence. I was born in
-            Poland but the winds of life took me through many places from the
-            dunes of Dubai to the highlands of Scotland where I spent most of my
-            life relaxing by a loch (lake - in plain Scottish).
-          </p>
-          <p>
-            I started my journey in tourism & hospitality management because of
-            my strong desire to help others and whereas I’d like to think I was
-            designing and delivering experiences. During this time, I developed
-            a strong sense of empathy for others through learning their pain
-            points and seeing the world from their perspective. Working in such
-            a social environment has taught me that everyone has a story to tell
-            and the importance of being open to ideas. I believe that every
-            problem has a good solution if we remember to be open, flexible, and
-            adjustable to change.
-          </p>
-          <p>
-            Why the transition to user experience? I have always enjoyed
-            engaging both the creative and analytical parts of my brain. For a
-            long time, I didn't know how to combine the two into a career.
-            Finding UX Design and specializing in UI was the perfect mix of the
-            two for me and it has only enhanced my desire to help people. I
-            intend to leverage my prior experience to bring a level of empathy
-            and attention to detail that's critical to making intuitive user
-            experiences.
-          </p>
+        <div class="about-section__wrapper">
+          <div class="about-mainbar">
+            <h1>Hello! I'm Judyta Baca</h1>
+            <p>
+              But my friends & family call me Judy. I'm a UX/UI designer with a
+              keen eye and interest in front-end development, hoping to further
+              my career in the design space. My main interest is creating better
+              experiences for people and reaching for excellence. I was born in
+              Poland but the winds of life took me through many places from the
+              dunes of Dubai to the highlands of Scotland where I spent most of
+              my life relaxing by a loch (lake - in plain Scottish).
+            </p>
+            <p>
+              I started my journey in tourism & hospitality management because
+              of my strong desire to help others and whereas I’d like to think I
+              was designing and delivering experiences. During this time, I
+              developed a strong sense of empathy for others through learning
+              their pain points and seeing the world from their perspective.
+              Working in such a social environment has taught me that everyone
+              has a story to tell and the importance of being open to ideas. I
+              believe that every problem has a good solution if we remember to
+              be open, flexible, and adjustable to change.
+            </p>
+            <p>
+              Why the transition to user experience? I have always enjoyed
+              engaging both the creative and analytical parts of my brain. For a
+              long time, I didn't know how to combine the two into a career.
+              Finding UX Design and specializing in UI was the perfect mix of
+              the two for me and it has only enhanced my desire to help people.
+              I intend to leverage my prior experience to bring a level of
+              empathy and attention to detail that's critical to making
+              intuitive user experiences.
+            </p>
 
-          <p>
-            In my spare time, you’ll find me creating content for my personal
-            videography projects, brushing up on my photography skills or
-            running a 5K or at least trying to get to the finish line.
-          </p>
-          <a href="assets/files/judyta_baca_cv.pdf" target="_blank"
-            >View resume</a
-          >
+            <p>
+              In my spare time, you’ll find me creating content for my personal
+              videography projects, brushing up on my photography skills or
+              running a 5K or at least trying to get to the finish line.
+            </p>
+          </div>
+          <div class="about-sidebar">
+            <img src="assets/img/profile_pic.svg" alt="Proofile picture" />
+            <button>
+              <a href="assets/files/judyta_baca_cv.pdf" target="_blank"
+                >View resume</a
+              >
+            </button>
+          </div>
         </div>
       </section>
       <section>
         <div>
           <h2>Skills & Tools</h2>
-          <div>
-            <div>
+          <div class="skills-tools">
+            <div class="skills-section">
               <h3>Skills</h3>
-              <ul>
-                <li>Design Thinking</li>
-                <li>Competitor Analysis</li>
-                <li>Business Requirements</li>
-                <li>User Interviews</li>
-                <li>Card Sorting</li>
-                <li>Affinity Mapping</li>
-                <li>User Personas</li>
-                <li>User Stories</li>
-                <li>Task Flows</li>
-                <li>User Flows</li>
-                <li>IA</li>
-                <li>Wireframing</li>
-                <li>Prototyping</li>
-                <li>Usability Testing</li>
-                <li>Visual Design</li>
-                <li>A/B & Preference Testing</li>
-                <li>Design Systems</li>
-                <li>Design Documentation</li>
-                <li>Pen & Paper Sketching</li>
-                <li>Low-Mid-High Fidelity Mockups</li>
-              </ul>
+              <div class="skills-list">
+                <span class="tag">Design Thinking</span>
+                <span class="tag">Competitor Analysis</span>
+                <span class="tag">Business Requirements</span>
+                <span class="tag">User Interviews</span>
+                <span class="tag">Card Sorting</span>
+                <span class="tag">Affinity Mapping</span>
+                <span class="tag"an>User Personas</span>
+                <span class="tag">User Stories</span>
+                <span class="tag">Task Flows</span>
+                <span class="tag">User Flows</span>
+                <span class="tag">IA</span>
+                <span class="tag">Wireframing</span>
+                <span class="tag">Prototyping</span>
+                <span class="tag">Usability Testing</span>
+                <span class="tag">Visual Design</span>
+                <span class="tag">A/B & Preference Testing</span>
+                <span class="tag">Design Systems</span>
+                <span class="tag">Design Documentation</span>
+                <span class="tag">Pen & Paper Sketching</span>
+                <span class="tag">Low-Mid-High Fidelity Mockups</span>
+              </div>
             </div>
-            <div>
+            <div class="tools-section">
               <h3>Tools</h3>
-              <ul>
-                <li>Adobe XD</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Premiere Pro</li>
-                <li>Adobe After Effects</li>
-                <li>HTML 5</li>
-                <li>CCS 3</li>
-              </ul>
+              <div class="tools-list">
+                <span class="tag">Adobe XD</span>
+                <span class="tag">Adobe Photoshop</span>
+                <span class="tag">Adobe Illustrator</span>
+                <span class="tag">Adobe Premiere Pro</span>
+                <span class="tag">Adobe After Effects</span>
+                <span class="tag"i>HTML 5</span>
+                <span class="tag">CCS 3</span>
+              </div>
             </div>
-          </div>
+          </divc>
         </div>
       </section>
     </main>
-    <footer id="contact">
-      <div>
+    <footer id="contact" class="footer-wrapper">
+      <div class="connect-section">
         <h2>LET'S CONNECT</h2>
         <p>
           Get in touch for job opportunities, collaborative ideas or just to say
           hi! 👋. You can get in touch on my phone
           <a href="tel:1234567890">1234567890</a> ond on my email:
-          <a href="mailto:bacajudyta@gmail.com">bacajudyta@gmail.com</a> or fill
-          and submit the form below.
+          <a href="mailto:bacajudyta@gmail.com">bacajudyta@gmail.com</a>.
         </p>
       </div>
 
-      <div>
-        <div>
+      <div class="links-section">
+        <div class="links-section__icons">
           <a href="#">
             <img src="assets/img/social/ico-email.png" alt="Email" />
           </a>
