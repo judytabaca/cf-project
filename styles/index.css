@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@300;400;500;700&display=swap");
 
 * {
@@ -79,6 +81,122 @@ button a:visited {
 
 .tag:hover {
   background: #209490;
+}
+
+.header-container {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.header-bar {
+  display: flex;
+  height: 110px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.nav-menu__button {
+  float: left;
+}
+
+.nav-menu__button a {
+  display: block;
+  color: #333;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.nav-menu__button a:hover {
+  font-weight: bold;
+}
+
+/* MAIN */
+
+.main-wrapper {
+  text-align: center;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.hero-section__header {
+  text-align: center;
+  width: 100%;
+  font-size: 35px;
+  padding: 1em;
+  line-height: 1;
+}
+
+.hero-section__header .scored {
+  text-decoration: line-through;
+  font-size: 1em;
+  font-family: "Oswald";
+  color: #333;
+}
+
+.hero-section__text p {
+  text-align: left;
+  padding: 1em;
+}
+
+.hero-section__text p:first-of-type {
+  margin-top: 2em;
+}
+
+.work-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.work-card {
+  display: flex;
+  width: 90%;
+  margin-bottom: 2em;
+}
+
+.work-card__text {
+  width: 40%;
+  padding: 0 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work-card__text h3 {
+  padding: 0 1em;
+}
+
+.work-card__text p {
+  margin: 1.5em 0;
+}
+
+.work-card__image {
+  width: 60%;
+}
+
+.work-card__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* FOOTER */
