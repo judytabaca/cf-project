@@ -5,20 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlutoPay</title>
+
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/pluto.css" />
   </head>
   <body>
-    <header>
-      <div>
+    <header class="header-container">
+      <div class="header-bar">
         <img src="../assets/img/logo.png" alt="Judyta Baca" />
         <nav>
-          <a href="../index.html">Work</a>
-          <a href="../about.html">About Me</a>
-          <a href="#contact">Contact</a>
+          <ul class="nav-menu">
+            <li class="nav-menu__button active">
+              <a href="../index.html">Work</a>
+            </li>
+            <li class="nav-menu__button">
+              <a href="../about.html">About Me</a>
+            </li>
+            <li class="nav-menu__button">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
-
-    <main>
+    <main class="main-wrapper">
       <section>
         <img src="../assets/img/plutopay/pp_header.svg" alt="header" />
         <h1>Introduction</h1>
@@ -167,7 +178,7 @@
           testers felt appropriate for
         </p>
         <img
-          src="../assets/img/plutopay/sec_04_01.svg"
+          src="../assets/img/plutopay/sec_04_01.png"
           alt="Low FIdelity Mockups"
         />
         <h3>Low Fidelity</h3>
@@ -182,7 +193,7 @@
           functionality of the user interface.
         </p>
         <img
-          src="../assets/img/plutopay/sec_04_02.svg"
+          src="../assets/img/plutopay/sec_04_02.png"
           alt="Mid FIdelity Mockups"
         />
         <h3>Low Fidelity</h3>
@@ -211,7 +222,7 @@
           </li>
         </ul>
         <img
-          src="../assets/img/plutopay/sec_04_03.svg"
+          src="../assets/img/plutopay/sec_04_03.png"
           alt="High FIdelity Mockups"
         />
         <h3>Prototype</h3>
@@ -221,7 +232,7 @@
           as to conduct further testing that would drive further development,
           refinement and iterations of the application.
         </p>
-        <img src="../assets/img/plutopay/sec_04_04.svg" alt="Prototype Map" />
+        <img src="../assets/img/plutopay/sec_04_04.png" alt="Prototype Map" />
       </section>
       <section>
         <img src="../assets/img/plutopay/sec_05.svg" alt="5. Test" />
@@ -262,20 +273,19 @@
       </section>
     </main>
 
-    <footer id="contact">
-      <div>
+    <footer id="contact" class="footer-wrapper">
+      <div class="connect-section">
         <h2>LET'S CONNECT</h2>
         <p>
           Get in touch for job opportunities, collaborative ideas or just to say
           hi! 👋. You can get in touch on my phone
           <a href="tel:1234567890">1234567890</a> ond on my email:
-          <a href="mailto:bacajudyta@gmail.com">bacajudyta@gmail.com</a> or fill
-          and submit the form below.
+          <a href="mailto:bacajudyta@gmail.com">bacajudyta@gmail.com</a>.
         </p>
       </div>
 
-      <div>
-        <div>
+      <div class="links-section">
+        <div class="links-section__icons">
           <a href="#">
             <img src="../assets/img/social/ico-email.png" alt="Email" />
           </a>

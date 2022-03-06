@@ -1,0 +1,30 @@
+.main-wrapper {
+  text-align: center;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.about-section__wrapper {
+  display: flex;
+}
+
+.about-mainbar p {
+  text-align: left;
+  margin-top: 1em;
+}
+
+.skills-tools {
+  display: flex;
+  width: 100%;
+}
+
+.skills-section,
+.tools-section {
+  width: 50%;
+}
+
+.tools-list,
+.skills-list {
+  text-align: left;
+  padding: 2em;
+}
