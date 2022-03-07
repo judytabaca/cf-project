@@ -83,6 +83,14 @@ button a:visited {
   background: #209490;
 }
 
+/* UTILITY */
+
+.row {
+  margin-top: 2em;
+}
+
+/* nav */
+
 .header-container {
   width: 94%;
   margin: 0 auto;

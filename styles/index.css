@@ -96,6 +96,14 @@ button a:visited {
   justify-content: space-between;
 }
 
+/* UTILITY */
+
+.row {
+  margin-top: 2em;
+}
+
+/* NAV */
+
 .nav-menu {
   list-style-type: none;
   margin: 0;
