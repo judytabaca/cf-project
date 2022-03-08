@@ -207,6 +207,47 @@ button a:visited {
   border-radius: 8px;
 }
 
+/* SVG ANIMATION */
+
+@keyframes cloud_1_move {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(200px, 0px);
+  }
+}
+
+@keyframes cloud_2_move {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(-100px, 0px);
+  }
+}
+
+@keyframes cloud_3_move {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(200px, 0px);
+  }
+}
+
+#cloud_1 {
+  animation: 30s cloud_1_move infinite alternate linear;
+}
+
+#cloud_2 {
+  animation: 20s cloud_2_move infinite alternate linear;
+}
+
+#cloud_3 {
+  animation: 15s cloud_2_move infinite alternate linear;
+}
+
 /* FOOTER */
 
 .footer-wrapper {
